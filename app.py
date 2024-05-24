@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 
 st.set_page_config(page_title="Sales Prediction using Python", page_icon="🛒")
 
-st.title("Sales Prediction 🛒")
+st.title("Sales Prediction using Python 🛒")
 
 # Load the dataset
 def load_data():
@@ -18,7 +18,7 @@ df = load_data()
 
 # Display the dataset
 st.header("Advertising Dataset")
-st.write(df.head())
+st.write(df)
 
 # Select features and target variable
 X = df[['TV', 'Radio', 'Newspaper']]
