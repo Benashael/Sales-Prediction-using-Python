@@ -56,4 +56,4 @@ model.fit(X_train, y_train)
 if st.button("Predict"):
     prediction = model.predict(input_df)
     st.subheader('Prediction')
-    st.write(f"Predicted Sales: **{prediction[0]:.2f}**")
+    st.write(f"Predicted Sales (in units): **{prediction[0]:.2f}**")
