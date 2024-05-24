@@ -53,6 +53,7 @@ elif model_type == "K - Nearest Neighbors":
 model.fit(X_train, y_train)
 
 # Prediction
-prediction = model.predict(input_df)
-st.subheader('Prediction')
-st.write(f"Predicted Sales: **{prediction[0]:.2f}**")
+if st.button("Predict"):
+    prediction = model.predict(input_df)
+    st.subheader('Prediction')
+    st.write(f"Predicted Sales: **{prediction[0]:.2f}**")
